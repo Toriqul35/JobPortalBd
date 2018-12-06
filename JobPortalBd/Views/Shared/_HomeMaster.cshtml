@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title www.jobprotalbd.com</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/Home/Home.css")
+</head>
+<body>
+    <ul>
+        <li style="margin-left:27px">@Html.ActionLink("Job Protal", "Index", "Home")</li>
+        <li>@Html.ActionLink("Company", "ViewCompanyall", "All")</li>
+        <li style="text-decoration:none">@Html.ActionLink("Job", "ViewJoball", "All")</li>
+        <li>@Html.ActionLink("Notice", "ViewNotice1", "Notice")</li>
+        <li>
+            @Html.ActionLink("Total Enrolled", "Index", "Home")
+            <ul>
+                <li> @Html.ActionLink("Job Sheeker", "ViewShekerProfileall", "All")</li>
+                <li> @Html.ActionLink("Company", "ViewCompanyall", "All")</li>
+            </ul>
+        </li>
+        <li>@Html.ActionLink("Interview", "Index", "Home")</li>
+        <li>
+            @Html.ActionLink("Registration", "Index", "Home")
+            <ul>
+                <li>@Html.ActionLink("Job Sheeker", "Create", "Sheeker")</li>
+                <li>@Html.ActionLink("Company", "Create", "Company")</li>
+            </ul>
+        </li>
+        <li>
+            @Html.ActionLink("Login", "Index", "Home")
+            <ul>
+                <li>@Html.ActionLink("Job Sheeker", "Login", "Sheeker")</li>
+                <li>@Html.ActionLink("Company", "Login", "Company")</li>
+            </ul>
+        </li>
+        <li>@Html.ActionLink("Admin", "Login", "Admin")</li>
+    </ul>
+    <div class="right">
+        <ul><li class="about">@Html.ActionLink("Feadback", "About", "Home")</li></ul>
+    </div>
+    <div class="right">
+        <ul><li class="helpline">@Html.ActionLink("Contact", "About", "Home")</li></ul>
+    </div>
+    <div class="right">
+        <ul><li class="helpline2">@Html.ActionLink("About", "About", "Home")</li></ul>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - <b>Job Protal</b></p>
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html> 

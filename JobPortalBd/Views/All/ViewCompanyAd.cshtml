@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Jobprotal.Models.Companyadd>
+@{
+    ViewBag.Title = "ViewCompanyAd";
+    Layout = "~/Views/Shared/_All.cshtml";
+}
+<center><h2>View All Company</h2></center>
+<p>
+    @Html.ActionLink("New Company", "CreateCompany")
+</p>
+<table class="table">
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.C_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Web_S)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Establish_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Entry_Date)
+        </th>
+
+
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.C_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Web_S)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Establish_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Entry_Date)
+            </td>
+
+
+            <td>
+                @Html.ActionLink("Edit", "EditCompanyad", new { id = item.C_Id }) |
+                @Html.ActionLink("Delete", "DeleteCompany", new { id = item.C_Id })
+            </td>
+        </tr>
+    }
+</table>
+<div>
+    <center><h2> @Html.ActionLink("Back to List", "Index", "Admin")</h2></center>
+</div>

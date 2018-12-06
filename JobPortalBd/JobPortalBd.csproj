@@ -126,18 +126,46 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AllController.cs" />
+    <Compile Include="Controllers\ApplyJobController.cs" />
+    <Compile Include="Controllers\CompanyController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NoticeController.cs" />
+    <Compile Include="Controllers\SheekerController.cs" />
+    <Compile Include="Crypto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Admin1.cs" />
+    <Compile Include="Models\ApplyJob.cs" />
+    <Compile Include="Models\Company.cs" />
+    <Compile Include="Models\Companyadd.cs" />
+    <Compile Include="Models\CompanyProfile1.cs" />
+    <Compile Include="Models\Company_login.cs" />
+    <Compile Include="Models\DataManage1.cs" />
+    <Compile Include="Models\DbManage.cs" />
+    <Compile Include="Models\JobPost.cs" />
+    <Compile Include="Models\ManageCompany.cs" />
+    <Compile Include="Models\ManageSheeker.cs" />
+    <Compile Include="Models\Notice1.cs" />
+    <Compile Include="Models\SheekerAdd.cs" />
+    <Compile Include="Models\Sheekerprofile.cs" />
+    <Compile Include="Models\Sheeker_Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Admin\Home.css" />
+    <Content Include="Content\Admin\Setting.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Company\Home.css" />
+    <Content Include="Content\Company\Setting.css" />
+    <Content Include="Content\Home\Home.css" />
+    <Content Include="Content\Sheeeker\Home.css" />
+    <Content Include="Content\Sheeeker\Setting.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -165,16 +193,37 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_AdminMaster.cshtml" />
+    <Content Include="Views\Shared\_All.cshtml" />
+    <Content Include="Views\Shared\_CompanyMaster.cshtml" />
+    <Content Include="Views\Shared\_HomeMaster.cshtml" />
+    <Content Include="Views\Shared\_SheekerMaster.cshtml" />
+    <Content Include="Views\Admin\Login.cshtml" />
+    <Content Include="Views\Admin\PublishJob.cshtml" />
+    <Content Include="Views\All\CreateCompany.cshtml" />
+    <Content Include="Views\Admin\Logout.cshtml" />
+    <Content Include="Views\All\DeleteCompany.cshtml" />
+    <Content Include="Views\All\DeleteSheeker.cshtml" />
+    <Content Include="Views\All\EditCompanyad.cshtml" />
+    <Content Include="Views\All\EditSheeker.cshtml" />
+    <Content Include="Views\All\Index.cshtml" />
+    <Content Include="Views\All\ViewCompanyAd.cshtml" />
+    <Content Include="Views\All\ViewCompanyall.cshtml" />
+    <Content Include="Views\All\ViewJoball.cshtml" />
+    <Content Include="Views\All\ViewSheekerAd.cshtml" />
+    <Content Include="Views\All\ViewSheekerall.cshtml" />
+    <Content Include="Views\All\ViewSheekerProfileall.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Company\" />
-    <Folder Include="Content\Sheeeker\" />
-    <Folder Include="Models\" />
+    <Folder Include="Views\ApplyJob\" />
+    <Folder Include="Views\Company\" />
+    <Folder Include="Views\Notice\" />
+    <Folder Include="Views\Sheeker\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

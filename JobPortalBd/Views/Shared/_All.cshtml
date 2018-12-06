@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title www.jobprotalbd.com</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/Home/Home.css")
+</head>
+<body>
+    <ul>
+        <li style="margin-left:27px">@Html.ActionLink("Job Protal", "Index", "All")</li>
+        <li>@Html.ActionLink("Company", "Index", "Home")</li>
+        <li style="text-decoration:none">@Html.ActionLink("Job ", "Index", "All")</li>
+        <li>@Html.ActionLink("Notice", "Index", "All")</li>
+        <li>
+            @Html.ActionLink("Total Enrolled", "Index", "All")
+
+        </li>
+        <li>@Html.ActionLink("Interview", "Index", "All")</li>
+        <li>
+            @Html.ActionLink("Registration", "Index", "All")
+        </li>
+        <li>
+            @Html.ActionLink("Login", "Index", "All")
+        </li>
+        <li>@Html.ActionLink("Admin", "Index", "All")</li>
+    </ul>
+    <div class="right">
+        <ul><li class="about">@Html.ActionLink("Feadback", "Index", "All")</li></ul>
+    </div>
+    <div class="right">
+        <ul><li class="helpline">@Html.ActionLink("Contact", "Index", "All")</li></ul>
+    </div>
+    <div class="right">
+        <ul><li class="helpline2">@Html.ActionLink("About", "Index", "All")</li></ul>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - <b>Job Protal Bd</b></p>
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
