@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Jobprotal.Models.Notice1>
+@{
+    ViewBag.Title = "ViewNotice1";
+    Layout = "~/Views/Shared/_HomeMaster.cshtml";
+}
+<Center><h2>View All Notice</h2></Center>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FileName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FilePath)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Search)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FileName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FilePath)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Search)
+            </td>
+            <td>
+
+                @Html.ActionLink("Download", "DownloadFile", new { id = item.Id })
+            </td>
+        </tr>
+    }
+</table>

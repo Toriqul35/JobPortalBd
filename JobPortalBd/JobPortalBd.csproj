@@ -149,6 +149,7 @@
     <Compile Include="Models\ManageCompany.cs" />
     <Compile Include="Models\ManageSheeker.cs" />
     <Compile Include="Models\Notice1.cs" />
+    <Compile Include="Models\ResetPassword.cs" />
     <Compile Include="Models\SheekerAdd.cs" />
     <Compile Include="Models\Sheekerprofile.cs" />
     <Compile Include="Models\Sheeker_Login.cs" />
@@ -217,13 +218,40 @@
     <Content Include="Views\All\ViewSheekerall.cshtml" />
     <Content Include="Views\All\ViewSheekerProfileall.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\Setting.cshtml" />
+    <Content Include="Views\All\CreateSheekerad.cshtml" />
+    <Content Include="Views\ApplyJob\ApplyJob.cshtml" />
+    <Content Include="Views\ApplyJob\Index.cshtml" />
+    <Content Include="Views\Company\C_Company.cshtml" />
+    <Content Include="Views\Company\Create.cshtml" />
+    <Content Include="Views\Company\Edit.cshtml" />
+    <Content Include="Views\Company\Index.cshtml" />
+    <Content Include="Views\Company\Login.cshtml" />
+    <Content Include="Views\Company\Logout.cshtml" />
+    <Content Include="Views\Company\PublishedPost.cshtml" />
+    <Content Include="Views\Company\PuvlishedPostC.cshtml" />
+    <Content Include="Views\Company\Setting.cshtml" />
+    <Content Include="Views\Company\UpdadeJob.cshtml" />
+    <Content Include="Views\Company\ViewCompany.cshtml" />
+    <Content Include="Views\Company\ViewJob.cshtml" />
+    <Content Include="Views\Notice\PublishNotice.cshtml" />
+    <Content Include="Views\Notice\ViewNotice.cshtml" />
+    <Content Include="Views\Notice\ViewNotice1.cshtml" />
+    <Content Include="Views\Notice\ViewNotice2.cshtml" />
+    <Content Include="Views\Sheeker\ApplyJob.cshtml" />
+    <Content Include="Views\Sheeker\Create.cshtml" />
+    <Content Include="Views\Sheeker\CreateProfile1.cshtml" />
+    <Content Include="Views\Sheeker\CreateSheeker.cshtml" />
+    <Content Include="Views\Sheeker\DeleteSheekerProfile.cshtml" />
+    <Content Include="Views\Sheeker\EditSheekerProfile.cshtml" />
+    <Content Include="Views\Sheeker\Index.cshtml" />
+    <Content Include="Views\Sheeker\Login.cshtml" />
+    <Content Include="Views\Sheeker\Setting.cshtml" />
+    <Content Include="Views\Sheeker\ViewSheekerProfile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\ApplyJob\" />
-    <Folder Include="Views\Company\" />
-    <Folder Include="Views\Notice\" />
-    <Folder Include="Views\Sheeker\" />
+    <Folder Include="NoticeFiles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
